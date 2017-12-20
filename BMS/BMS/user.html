@@ -1,0 +1,1357 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:split="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>创新创业工作室图书馆</title>
+    <link rel="shortcut icon" href="images/logo.ico"/>
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet" >
+    <!--//main-->
+    <link href="style.css" type="text/css" rel="stylesheet" >
+    <link rel="stylesheet" href="css/swipebox.css">
+    <!--//top-->
+    <link href="css/style.css" rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="css/jquery.countdown.css" />
+    <link rel="stylesheet" href="../vendor/font-awesome/css/font-awesome.min.css">
+    <!--js-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
+    <!----font-Awesome----->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <!----font-Awesome----->
+    <script>
+        $(document).ready(function(){
+            $(".dropdown").hover(
+                function() {
+                    $('.dropdown-menu', this).stop( true, true ).slideDown("fast");
+                    $(this).toggleClass('open');
+                },
+                function() {
+                    $('.dropdown-menu', this).stop( true, true ).slideUp("fast");
+                    $(this).toggleClass('open');
+                }
+            );
+        });
+    </script>
+    <!--web-fonts-->
+    <link href='//fonts.googleapis.com/css?family=Overlock:400,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <!--//web-fonts-->
+    <!--start-smooth-scrolling-->
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event){
+                event.preventDefault();
+                $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+            });
+        });
+    </script>
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/user.css">
+    <!--<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">-->
+</head>
+<body class="easyui-layout" id="divLayout">
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!--<a class="navbar-brand" href="index.html">JSUCCW LIBRARY</a>-->
+            <img src="images/logo.png" alt="创新创业工作室图书馆" class="img-responsive" style="height: 50px;width: 250px;margin-top: 5px">
+        </div>
+        <!--/.navbar-header-->
+        <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1" style="height: 1px;">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="login.html"><i class="fa fa-user"></i><span>登录</span></a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i
+                            class="fa fa-list"></i><span>资源</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="courses.html">学习网站</a></li>
+                        <li><a href="courses.html">大一排名</a></li>
+                        <li><a href="course_detail.html">大二排名</a></li>
+                        <li><a href="course_detail.html">大三排名</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-calendar"></i><span>实验室事件</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="events.html">Event1</a></li>
+                        <li><a href="events.html">Event2</a></li>
+                        <li><a href="events.html">Event3</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i
+                            class="fa fa-globe"></i><span>反馈</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#"><span><i class="flags us"></i><span>English</span></span></a></li>
+                        <li><a href="#"><span><i class="flags newzland"></i><span>Newzland</span></span></a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i
+                            class="fa fa-search"></i><span>搜索</span></a>
+                    <ul class="dropdown-menu search-form">
+                        <form>
+                            <input type="text" class="search-text" name="s" placeholder="Search...">
+                            <button type="submit" class="search-submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <!--/.navbar-collapse-->
+</nav>
+<nav class="navbar nav_bottom" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header nav_2">
+            <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse"
+                    data-target="#bs-megadropdown-tabs">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"></a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+            <ul class="nav navbar-nav nav_1">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="about.html">本馆概况</a></li>
+                <!--<li class="dropdown mega-dropdown active">-->
+                <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown">Admissions<span class="caret"></span></a>-->
+                <!--<div class="dropdown-menu mega-dropdown-menu">-->
+                <!--<div class="container-fluid">-->
+                <!--&lt;!&ndash; Tab panes &ndash;&gt;-->
+                <!--<div class="tab-content">-->
+                <!--<div class="tab-pane active" id="men">-->
+                <!--<ul class="nav-list list-inline">-->
+                <!--<li><a href="admission.html"><img src="images/t7.jpg" class="img-responsive"-->
+                <!--alt=""/></a></li>-->
+                <!--<li><a href="admission.html"><img src="images/t8.jpg" class="img-responsive"-->
+                <!--alt=""/></a></li>-->
+                <!--<li><a href="admission.html"><img src="images/t9.jpg" class="img-responsive"-->
+                <!--alt=""/></a></li>-->
+                <!--<li><a href="admission.html"><img src="images/t1.jpg" class="img-responsive"-->
+                <!--alt=""/></a></li>-->
+                <!--</ul>-->
+                <!--</div>-->
+                <!--<div class="tab-pane" id="women">-->
+                <!--<ul class="nav-list list-inline">-->
+                <!--<li><a href="admission.html"><img src="images/t1.jpg" class="img-responsive"-->
+                <!--alt=""/></a></li>-->
+                <!--<li><a href="admission.html"><img src="images/t2.jpg" class="img-responsive"-->
+                <!--alt=""/></a></li>-->
+                <!--<li><a href="admission.html"><img src="images/t3.jpg" class="img-responsive"-->
+                <!--alt=""/></a></li>-->
+                <!--<li><a href="admission.html"><img src="images/t4.jpg" class="img-responsive"-->
+                <!--alt=""/></a></li>-->
+                <!--<li><a href="admission.html"><img src="images/t5.jpg" class="img-responsive"-->
+                <!--alt=""/></a></li>-->
+                <!--<li><a href="admission.html"><img src="images/t6.jpg" class="img-responsive"-->
+                <!--alt=""/></a></li>-->
+                <!--</ul>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--&lt;!&ndash; Nav tabs &ndash;&gt;-->
+                <!--<ul class="nav nav-tabs" role="tablist">-->
+                <!--<li class="active"><a href="#men" role="tab" data-toggle="tab">School</a></li>-->
+                <!--<li><a href="#women" role="tab" data-toggle="tab">College</a></li>-->
+                <!--</ul>-->
+                <!--</div>-->
+                <!--</li>-->
+                <li><a href="faculty.html">读者服务</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">本馆通知<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="terms.html">工作动态</a></li>
+                        <li><a href="shortcodes.html">公告通知</a></li>
+                        <li><a href="faq.html">新书通报</a></li>
+                        <li><a href="faq.html">读者荐购</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">本馆服务<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="terms.html">读书续借</a></li>
+                        <li><a href="shortcodes.html">学长学姐有话说</a></li>
+                        <li><a href="faq.html">留言板</a></li>
+                        <li><a href="faq.html">方向推荐</a></li>
+                        <li><a href="faq.html">学长学姐联系</a></li>
+                        <li><a href="faq.html">爱心图书捐赠</a></li>
+                    </ul>
+                </li>
+                <li><a href="services.html">购书指南</a></li>
+                <li><a href="features.html">创新创业工作室</a></li>
+                <!--<li><a href="blog.html">Blog</a></li>
+                <li><a href="career.html">Career</a></li>
+                <li class="last"><a href="contact.html">Contacts</a></li>-->
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div>
+</nav>
+<div id="home" class="banner">
+    <div class="banner-info">
+        <div class="container">
+            <div class="col-md-4 header-left">
+                <a href="index.html"><img src="images/img1.jpg" alt=""/></a>
+            </div>
+            <div class="col-md-8 header-right">
+                <h2>你好</h2>
+                <h1>灿烈</h1>
+                <h6>什么签名没有哦(●'◡'●)</h6>
+                <ul class="address">
+                    <li>
+                        <ul class="address-text">
+                            <li><b>年级</b></li>
+                            <li>15级</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="address-text">
+                            <li><b>已读书籍</b></li>
+                            <li>666  &nbsp; 本</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="address-text">
+                            <li><b>关注 </b></li>
+                            <li>33</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="address-text">
+                            <li><b>粉丝 </b></li>
+                            <li>999</li>
+                        </ul>
+                    </li>
+                    <li><ul class="address-text"><li><b> </b></li><li></li></ul></li>
+                    <li><ul class="address-text"><li><b> </b></li><li></li></ul></li>
+                </ul>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+</div>
+<!--//banner-->
+<!--//top-nav-->
+<div class="peoplemain">
+    <div class="west col-xs-3">
+        <ul >
+            <li class="account " >
+                <a  id="west1">
+                    <i class="fa fa-calendar-check-o"></i><span>我的动态</span><i class="fa fa-angle-down"></i>
+                </a>
+            </li>
+            <div class="submenu" style="display: none; ">
+                <ul class="root">
+                    <li  >
+                        <a id="west2"  onclick="change_div('dynamicall')">
+                            <i class="fa fa-leaf"></i><span>全部</span><i class="fa fa-angle-right"></i>
+                        </a>
+                    </li>
+                    <li >
+                        <a id="west3"  >
+                            <i class="fa fa-leaf"></i><span>预定</span><i class="fa fa-angle-right"></i>
+                        </a>
+                    </li>
+                    <li >
+                        <a id="west4"  >
+                            <i class="fa fa-leaf"></i><span>所借阅</span><i class="fa fa-angle-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="west5"  >
+                            <i class="fa fa-leaf"></i><span>未归还</span><i class="fa fa-angle-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a  id="west6"  >
+                            <i class="fa fa-leaf"></i><span>已归还</span><i class="fa fa-angle-right"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <li>
+                <a id="west7" class="actived"  onclick="change_div('collection')"  >
+                    <i class="fa fa-bookmark"></i><span>我的收藏</span><i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a id="west8" onclick="change_div('experience')">
+                    <i class="fa fa-book"></i><span>最近学习</span><i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a id="west9"  onclick="change_div('readingNotes')">
+                    <i class="fa fa-calendar-o"></i><span>读书笔记</span><i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a id="west10"  onclick="change_div('myAttention')">
+                    <i class="fa fa-star"></i><span>我的关注</span><i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a id="west11"  onclick="change_div('myFeedback')">
+                    <i class="fa fa-commenting-o"></i><span>我的反馈</span><i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-xs-9 center">
+        <!--我的动态-->
+        <div id="dynamicall">
+            <div class="item newcourse ">
+                <span class=" pa share js-share" data-shareid="share_17222013"><img src="images/share2.png" width="150" height="150"></span>
+                <div class="share-box hide clearfix" data-objtype=0 data-nickname='ChanYeol' data-tuid=530 data-title='现代软件工程 'data-img="">
+                    <div class="a shareWrapBox">
+                        <div class="share-box-con">
+                            <div class="share-action l bdsharebuttonbox bdshare-button-style0-16" data-bd-bind="1463738309415">
+                                <a class="bds link bds_weixin icon-share-weichat" data-cmd="weixin" title="分享到微信"></a>
+                                <a class="bds link bds_tsina icon-share-weibo" data-cmd="tsina" title="分享到新浪微博"></a>
+                                <a class="bds link bds_qzone icon-share-qq" data-cmd="qzone" title="分享到QQ空间" ></a>
+                            </div>
+                        </div><!-- .share-box-con end -->
+                    </div><!-- .share-box end -->
+                </div>
+                <a  href="#" target="_blank" >
+                    <img src="images/book1.jpg" class="bookpic" width="80" height="80" >
+                </a>
+                <div class="content">
+                    <div class="bookhead">
+                        <div class="bookname">
+                            <a class="subtitle"  href="https://book.douban.com/subject/3269815/" target="_blank">现代软件工程</a>
+                        </div>
+                        <div class="time">6天前</div>
+                        <div class="state">预定了该本书</div>
+                    </div>
+                    <div class="bookbody">
+                        <a href="https://book.douban.com/subject/3269815/" target=_blank>
+                            <div class="content">
+                                <div class="hot">书籍人气&nbsp;:&nbsp;<strong> 585</strong></div>
+                                <div class="describe"><span >初 级</span><span class="ml20">&nbsp;&nbsp;&nbsp;&nbsp;<strong> 372</strong>页</span></div>
+                                <div class="detail">书籍总共分为4个部分，分别是样式篇、事件篇、动画篇、DOM篇。此为第二个部分—DOM...</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="cb"></div>
+            </div>
+            <div class="item newcourse">
+                <span class=" pa share js-share" data-shareid="share_17222013"><img src="images/share2.png" width="150" height="150"></span>
+                <div class="share-box hide clearfix" data-objtype=0 data-nickname='ChanYeol' data-tuid=530 data-title='现代软件工程 'data-img="">
+                    <div class="a shareWrapBox">
+                        <div class="share-box-con">
+                            <div class="share-action l bdsharebuttonbox bdshare-button-style0-16" data-bd-bind="1463738309415">
+                                <a class="bds link bds_weixin icon-share-weichat" data-cmd="weixin" title="分享到微信"></a>
+                                <a class="bds link bds_tsina icon-share-weibo" data-cmd="tsina" title="分享到新浪微博"></a>
+                                <a class="bds link bds_qzone icon-share-qq" data-cmd="qzone" title="分享到QQ空间" ></a>
+                            </div>
+                        </div><!-- .share-box-con end -->
+                    </div><!-- .share-box end -->
+                </div>
+                <a  href="#" target="_blank" >
+                    <img src="images/book2.jpg" class="bookpic" width="80" height="80" >
+                </a>
+                <div class="content">
+                    <div class="bookhead">
+                        <div class="bookname">
+                            <a class="subtitle"  href="https://book.douban.com/subject/24843631/" target="_blank">可信软件设计</a>
+                        </div>
+                        <div class="time">2017-11-06</div>
+                        <div class="state">借阅了该本书</div>
+                    </div>
+                    <div class="bookbody">
+                        <a href="https://book.douban.com/subject/24843631/" target=_blank>
+                            <div class="content">
+                                <div class="hot">书籍人气&nbsp;:&nbsp;<strong> 585</strong></div>
+                                <div class="describe"><span >初 级</span><span class="ml20">&nbsp;&nbsp;&nbsp;&nbsp;<strong> 372</strong>页</span></div>
+                                <div class="detail">书籍总共分为4个部分，分别是样式篇、事件篇、动画篇、DOM篇。此为第二个部分—DOM...</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="cb"></div>
+            </div>
+            <div class="item newcourse">
+                <span class=" pa share js-share" data-shareid="share_17222013"><img src="images/share2.png" width="150" height="150"></span>
+                <div class="share-box hide clearfix" data-objtype=0 data-nickname='ChanYeol' data-tuid=530 data-title='现代软件工程 'data-img="">
+                    <div class="a shareWrapBox">
+                        <div class="share-box-con">
+                            <div class="share-action l bdsharebuttonbox bdshare-button-style0-16" data-bd-bind="1463738309415">
+                                <a class="bds link bds_weixin icon-share-weichat" data-cmd="weixin" title="分享到微信"></a>
+                                <a class="bds link bds_tsina icon-share-weibo" data-cmd="tsina" title="分享到新浪微博"></a>
+                                <a class="bds link bds_qzone icon-share-qq" data-cmd="qzone" title="分享到QQ空间" ></a>
+                            </div>
+                        </div><!-- .share-box-con end -->
+                    </div><!-- .share-box end -->
+                </div>
+                <a  href="#" target="_blank" >
+                    <img src="images/book3.jpg" class="bookpic" width="80" height="80" >
+                </a>
+                <div class="content">
+                    <div class="bookhead">
+                        <div class="bookname">
+                            <a class="subtitle"  href="https://book.douban.com/subject/26346017/" target="_blank">java8函数式编程</a>
+                        </div>
+                        <div class="time">2017-10-10</div>
+                        <div class="state">已归还该本书</div>
+                    </div>
+                    <div class="bookbody">
+                        <a href="https://book.douban.com/subject/26346017/" target=_blank>
+                            <div class="content">
+                                <div class="hot">书籍人气&nbsp;:&nbsp;<strong> 585</strong></div>
+                                <div class="describe"><span >初 级</span><span class="ml20">&nbsp;&nbsp;&nbsp;&nbsp;<strong> 372</strong>页</span></div>
+                                <div class="detail">书籍总共分为4个部分，分别是样式篇、事件篇、动画篇、DOM篇。此为第二个部分—DOM...</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="cb"></div>
+            </div>
+            <div class="item newcourse">
+                <span class=" pa share js-share" data-shareid="share_17222013"><img src="images/share2.png" width="150" height="150"></span>
+                <div class="share-box hide clearfix" data-objtype=0 data-nickname='ChanYeol' data-tuid=530 data-title='现代软件工程 'data-img="">
+                    <div class="a shareWrapBox">
+                        <div class="share-box-con">
+                            <div class="share-action l bdsharebuttonbox bdshare-button-style0-16" data-bd-bind="1463738309415">
+                                <a class="bds link bds_weixin icon-share-weichat" data-cmd="weixin" title="分享到微信"></a>
+                                <a class="bds link bds_tsina icon-share-weibo" data-cmd="tsina" title="分享到新浪微博"></a>
+                                <a class="bds link bds_qzone icon-share-qq" data-cmd="qzone" title="分享到QQ空间" ></a>
+                            </div>
+                        </div><!-- .share-box-con end -->
+                    </div><!-- .share-box end -->
+                </div>
+                <a  href="#" target="_blank" >
+                    <img src="images/book4.jpg" class="bookpic" width="80" height="80" >
+                </a>
+                <div class="content">
+                    <div class="bookhead">
+                        <div class="bookname">
+                            <a class="subtitle"  href="https://book.douban.com/subject/3653422/" target="_blank">Web Anatomy</a>
+                        </div>
+                        <div class="time">2017-10-09</div>
+                        <div class="state">未归还该本书</div>
+                    </div>
+                    <div class="bookbody">
+                        <a href="https://book.douban.com/subject/3653422/" target=_blank>
+                            <div class="content">
+                                <div class="hot">书籍人气&nbsp;:&nbsp;<strong> 585</strong></div>
+                                <div class="describe"><span >初 级</span><span class="ml20">&nbsp;&nbsp;&nbsp;&nbsp;<strong> 372</strong>页</span></div>
+                                <div class="detail">书籍总共分为4个部分，分别是样式篇、事件篇、动画篇、DOM篇。此为第二个部分—DOM...</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="cb"></div>
+            </div>
+        </div>
+        <!--我的收藏-->
+        <div id="collection">
+            <div class="item newcourse">
+                <a class="btn btn-default following">
+                    <i class="iconfont ic-followed"></i>
+                    <span>已收藏</span>
+                </a>
+                <a  href="#" target="_blank" >
+                    <img src="images/book1.jpg" class="bookpic" width="80" height="80" >
+                </a>
+                <div class="content">
+                    <div class="bookhead">
+                        <div class="bookname">
+                            <a class="subtitle"  href="https://book.douban.com/subject/3269815/" target="_blank">现代软件工程</a>
+                        </div>
+                    </div>
+                    <div class="bookbody">
+                        <a href="https://book.douban.com/subject/3269815/" target=_blank>
+                            <div class="content">
+                                <div class="hot">书籍人气&nbsp;:&nbsp;<strong> 585</strong></div>
+                                <div class="describe"><span >初 级</span><span class="ml20">&nbsp;&nbsp;&nbsp;&nbsp;<strong> 372</strong>页</span></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="cb"></div>
+            </div>
+            <div class="item newcourse">
+                <a class="btn btn-default following">
+                    <i class="iconfont ic-followed"></i>
+                    <span>已收藏</span>
+                </a>
+                <a  href="#" target="_blank" >
+                    <img src="images/book2.jpg" class="bookpic" width="80" height="80" >
+                </a>
+                <div class="content">
+                    <div class="bookhead">
+                        <div class="bookname">
+                            <a class="subtitle"  href="https://book.douban.com/subject/24843631/" target="_blank">可信软件设计</a>
+                        </div>
+                    </div>
+                    <div class="bookbody">
+                        <a href="https://book.douban.com/subject/24843631/" target=_blank>
+                            <div class="content">
+                                <div class="hot">书籍人气&nbsp;:&nbsp;<strong> 585</strong></div>
+                                <div class="describe"><span >初 级</span><span class="ml20">&nbsp;&nbsp;&nbsp;&nbsp;<strong> 372</strong>页</span></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="cb"></div>
+            </div>
+            <div class="item newcourse">
+                <a class="btn btn-default following">
+                    <i class="iconfont ic-followed"></i>
+                    <span>已收藏</span>
+                </a>
+                <a  href="#" target="_blank" >
+                    <img src="images/book3.jpg" class="bookpic" width="80" height="80" >
+                </a>
+                <div class="content">
+                    <div class="bookhead">
+                        <div class="bookname">
+                            <a class="subtitle"  href="https://book.douban.com/subject/26346017/" target="_blank">java8函数式编程</a>
+                        </div>
+                    </div>
+                    <div class="bookbody">
+                        <a href="https://book.douban.com/subject/26346017/" target=_blank>
+                            <div class="content">
+                                <div class="hot">书籍人气&nbsp;:&nbsp;<strong> 585</strong></div>
+                                <div class="describe"><span >初 级</span><span class="ml20">&nbsp;&nbsp;&nbsp;&nbsp;<strong> 372</strong>页</span></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="cb"></div>
+            </div>
+            <div class="item newcourse">
+                <a class="btn btn-default following">
+                    <i class="iconfont ic-followed"></i>
+                    <span>已收藏</span>
+                </a>
+                <a  href="#" target="_blank" >
+                    <img src="images/book4.jpg" class="bookpic" width="80" height="80" >
+                </a>
+                <div class="content">
+                    <div class="bookhead">
+                        <div class="bookname">
+                            <a class="subtitle"  href="https://book.douban.com/subject/3653422/" target="_blank">Web Anatomy</a>
+                        </div>
+                    </div>
+                    <div class="bookbody">
+                        <a href="https://book.douban.com/subject/3653422/" target=_blank>
+                            <div class="content">
+                                <div class="hot">书籍人气&nbsp;:&nbsp;<strong> 585</strong></div>
+                                <div class="describe"><span >初 级</span><span class="ml20">&nbsp;&nbsp;&nbsp;&nbsp;<strong> 372</strong>页</span></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="cb"></div>
+            </div>
+        </div>
+        <!--最近学习-->
+        <div id="experience">
+            <div class="item-center newcourse ">
+                <div class="content tl-item">
+                     <ul class="time">
+                         <div class="dian btn btn-default"></div>
+                     <b>2017</b>
+                     <em>11月14日</em>
+                     </ul>
+                    <div class="course-list course-list-m">
+                        <ul class="clearfix">
+                            <li class="course-one" data-courseid="530" data-uid="5018511">
+                                <div class="course-list-img l">
+                                    <a href="#" target="_blank">
+                                        <img width="113" height="113" alt="现代软件工程" src="images/book1.jpg" />
+                                    </a>
+                                </div>
+                                <div class="course-list-cont">
+                                    <p class="study-hd">
+                                        <a href="#" target="_blank">现代软件工程</a>
+                                    </p>
+                                    <div class="study-points">
+                                        <span class="i-left span-common">已学80%</span>
+                                        <span class="i-right span-common">学习至6-9 java遍历之add()方法</span>
+                                    </div>
+                                    <div class="catog-points">
+                                        <span class="i-left span-common"><a href="#">笔记 <i>0</i></a></span>
+                                        <span class="i-right span-common"><a href="#">问答 <i>0</i></a></span>
+                                        <a href="#" target="_blank" class="btn-red continute-btn">继续学习</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            <div class="item-center newcourse ">
+                <div class="content tl-item">
+                    <ul class="time">
+                        <div class="dian btn btn-default"></div>
+                        <b>2017</b>
+                        <em>10月14日</em>
+                    </ul>
+                    <div class="course-list course-list-m">
+                        <ul class="clearfix">
+                            <li class="course-one" data-courseid="530" data-uid="5018511">
+                                <div class="course-list-img l">
+                                    <a href="#" target="_blank">
+                                        <img width="113" height="113" alt="可信软件设计" src="images/book2.jpg" />
+                                    </a>
+                                </div>
+                                <div class="course-list-cont">
+                                    <p class="study-hd">
+                                        <a href="#" target="_blank">可信软件设计</a>
+                                    </p>
+                                    <div class="study-points">
+                                        <span class="i-left span-common">已学90%</span>
+                                        <span class="i-right span-common">学习至6-9 java遍历之add()方法</span>
+                                    </div>
+                                    <div class="catog-points">
+                                        <span class="i-left span-common"><a href="#">笔记 <i>66</i></a></span>
+                                        <span class="i-right span-common"><a href="#">问答 <i>99</i></a></span>
+                                        <a href="#" target="_blank" class="btn-red continute-btn">继续学习</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="item-center newcourse ">
+                <div class="content tl-item">
+                    <ul class="time">
+                        <div class="dian btn btn-default"></div>
+                        <b>2017</b>
+                        <em>8月01日</em>
+                    </ul>
+                    <div class="course-list course-list-m">
+                        <ul class="clearfix">
+                            <li class="course-one" data-courseid="530" data-uid="5018511">
+                                <div class="course-list-img l">
+                                    <a href="#" target="_blank">
+                                        <img width="113" height="113" alt="java8函数式编程" src="images/book3.jpg" />
+                                    </a>
+                                </div>
+                                <div class="course-list-cont">
+                                    <p class="study-hd">
+                                        <a href="#" target="_blank">java8函数式编程</a>
+                                    </p>
+                                    <div class="study-points">
+                                        <span class="i-left span-common">已学40%</span>
+                                        <span class="i-right span-common">学习至6-9 java遍历之add()方法</span>
+                                    </div>
+                                    <div class="catog-points">
+                                        <span class="i-left span-common"><a href="#">笔记 <i>123</i></a></span>
+                                        <span class="i-right span-common"><a href="#">问答 <i>2</i></a></span>
+                                        <a href="#" target="_blank" class="btn-red continute-btn">继续学习</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="item-center newcourse ">
+                <div class="content tl-item">
+                    <ul class="time">
+                        <div class="dian btn btn-default"></div>
+                        <b>2016</b>
+                        <em>4月01日</em>
+                    </ul>
+                    <div class="course-list course-list-m">
+                        <ul class="clearfix">
+                            <li class="course-one" data-courseid="530" data-uid="5018511">
+                                <div class="course-list-img l">
+                                    <a href="#" target="_blank">
+                                        <img width="113" height="113" alt="Web Anatomy" src="images/book4.jpg" />
+                                    </a>
+                                </div>
+                                <div class="course-list-cont">
+                                    <p class="study-hd">
+                                        <a href="#" target="_blank">Web Anatomy</a>
+                                    </p>
+                                    <div class="study-points">
+                                        <span class="i-left span-common">已学100%</span>
+                                        <span class="i-right span-common">学习至6-9 java遍历之add()方法</span>
+                                    </div>
+                                    <div class="catog-points">
+                                        <span class="i-left span-common"><a href="#">笔记 <i>203</i></a></span>
+                                        <span class="i-right span-common"><a href="#">问答 <i>66</i></a></span>
+                                        <a href="#" target="_blank" class="btn-red continute-btn">继续学习</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--读书笔记-->
+        <div id="readingNotes">
+            <div class="item newcourse ">
+                <div class="share-box hide clearfix" data-objtype=0 data-nickname='ChanYeol' data-tuid=530 data-title='现代软件工程 'data-img="">
+                    <div class="a shareWrapBox">
+                        <div class="share-box-con">
+                            <div class="share-action l bdsharebuttonbox bdshare-button-style0-16" data-bd-bind="1463738309415">
+                                <a class="bds link bds_weixin icon-share-weichat" data-cmd="weixin" title="分享到微信"></a>
+                                <a class="bds link bds_tsina icon-share-weibo" data-cmd="tsina" title="分享到新浪微博"></a>
+                                <a class="bds link bds_qzone icon-share-qq" data-cmd="qzone" title="分享到QQ空间" ></a>
+                            </div>
+                        </div><!-- .share-box-con end -->
+                    </div><!-- .share-box end -->
+                </div>
+                <a  href="#" target="_blank" >
+                    <img src="images/book.png" class="bookpic" width="40" height="40" >
+                </a>
+                <div class="content">
+                    <div class="bookhead">
+                        <div class="bookname">
+                            <a class="subtitle"  href="https://book.douban.com/subject/3269815/" target="_blank">现代软件工程</a>
+                        </div>
+                    </div>
+                    <div class="bookbody">
+                        <a href="https://book.douban.com/subject/3269815/" target=_blank>
+                            <div class="content">
+                                <div class="span-common">6-9 java遍历之add()方法</div>
+                                <div class="note">正如我之前所写的，Java 8中的新功能特性改变了游戏规则。对Java开发者来说这是一个全新的世界，并且是时候去适应它了。在Java 8的新功能特性中...
+                                    <a  class="btn btn-default lookall">查看全部</a>
+                                </div>
+                                <div class="note-bottom">
+                                    <div class="note-time">2017-11-11 11:11</div>
+                                    <a class="btn btn-default note-del"><span class="glyphicon glyphicon-trash"></span>&nbsp;&nbsp;&nbsp;删除</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="cb"></div>
+            </div>
+            <div class="item newcourse ">
+                <div class="share-box hide clearfix" data-objtype=0 data-nickname='ChanYeol' data-tuid=530 data-title='可信软件设计 'data-img="">
+                    <div class="a shareWrapBox">
+                        <div class="share-box-con">
+                            <div class="share-action l bdsharebuttonbox bdshare-button-style0-16" data-bd-bind="1463738309415">
+                                <a class="bds link bds_weixin icon-share-weichat" data-cmd="weixin" title="分享到微信"></a>
+                                <a class="bds link bds_tsina icon-share-weibo" data-cmd="tsina" title="分享到新浪微博"></a>
+                                <a class="bds link bds_qzone icon-share-qq" data-cmd="qzone" title="分享到QQ空间" ></a>
+                            </div>
+                        </div><!-- .share-box-con end -->
+                    </div><!-- .share-box end -->
+                </div>
+                <a  href="#" target="_blank" >
+                    <img src="images/book.png" class="bookpic" width="40" height="40" >
+                </a>
+                <div class="content">
+                    <div class="bookhead">
+                        <div class="bookname">
+                            <a class="subtitle"  href="https://book.douban.com/subject/3269815/" target="_blank">可信软件设计</a>
+                        </div>
+                    </div>
+                    <div class="bookbody">
+                        <a href="https://book.douban.com/subject/3269815/" target=_blank>
+                            <div class="content">
+                                <div class="span-common">6-9 java遍历之add()方法</div>
+                                <div class="note">正如我之前所写的，Java 8中的新功能特性改变了游戏规则。对Java开发者来说这是一个全新的世界，并且是时候去适应它了。在Java 8的新功能特性中...
+                                    <a  class="btn btn-default lookall">查看全部</a>
+                                </div>
+                                <div class="note-bottom">
+                                    <div class="note-time">2017-08-08 08:08</div>
+                                    <a class="btn btn-default note-del"><span class="glyphicon glyphicon-trash"></span>&nbsp;&nbsp;&nbsp;删除</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="cb"></div>
+            </div>
+            <div class="item newcourse ">
+                <div class="share-box hide clearfix" data-objtype=0 data-nickname='ChanYeol' data-tuid=530 data-title='java8函数式编程 'data-img="">
+                    <div class="a shareWrapBox">
+                        <div class="share-box-con">
+                            <div class="share-action l bdsharebuttonbox bdshare-button-style0-16" data-bd-bind="1463738309415">
+                                <a class="bds link bds_weixin icon-share-weichat" data-cmd="weixin" title="分享到微信"></a>
+                                <a class="bds link bds_tsina icon-share-weibo" data-cmd="tsina" title="分享到新浪微博"></a>
+                                <a class="bds link bds_qzone icon-share-qq" data-cmd="qzone" title="分享到QQ空间" ></a>
+                            </div>
+                        </div><!-- .share-box-con end -->
+                    </div><!-- .share-box end -->
+                </div>
+                <a  href="#" target="_blank" >
+                    <img src="images/book.png" class="bookpic" width="40" height="40" >
+                </a>
+                <div class="content">
+                    <div class="bookhead">
+                        <div class="bookname">
+                            <a class="subtitle"  href="https://book.douban.com/subject/3269815/" target="_blank">java8函数式编程</a>
+                        </div>
+                    </div>
+                    <div class="bookbody">
+                        <a href="https://book.douban.com/subject/3269815/" target=_blank>
+                            <div class="content">
+                                <div class="span-common">6-9 java遍历之add()方法</div>
+                                <div class="note">正如我之前所写的，Java 8中的新功能特性改变了游戏规则。对Java开发者来说这是一个全新的世界，并且是时候去适应它了。在Java 8的新功能特性中...
+                                    <a  class="btn btn-default lookall">查看全部</a>
+                                </div>
+                                <div class="note-bottom">
+                                    <div class="note-time">2017-06-06 06:06</div>
+                                    <a class="btn btn-default note-del"><span class="glyphicon glyphicon-trash"></span>&nbsp;&nbsp;&nbsp;删除</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="cb"></div>
+            </div>
+            <div class="item newcourse ">
+                <div class="share-box hide clearfix" data-objtype=0 data-nickname='ChanYeol' data-tuid=530 data-title='Web Anatomy 'data-img="">
+                    <div class="a shareWrapBox">
+                        <div class="share-box-con">
+                            <div class="share-action l bdsharebuttonbox bdshare-button-style0-16" data-bd-bind="1463738309415">
+                                <a class="bds link bds_weixin icon-share-weichat" data-cmd="weixin" title="分享到微信"></a>
+                                <a class="bds link bds_tsina icon-share-weibo" data-cmd="tsina" title="分享到新浪微博"></a>
+                                <a class="bds link bds_qzone icon-share-qq" data-cmd="qzone" title="分享到QQ空间" ></a>
+                            </div>
+                        </div><!-- .share-box-con end -->
+                    </div><!-- .share-box end -->
+                </div>
+                <a  href="#" target="_blank" >
+                    <img src="images/book.png" class="bookpic" width="40" height="40" >
+                </a>
+                <div class="content">
+                    <div class="bookhead">
+                        <div class="bookname">
+                            <a class="subtitle"  href="https://book.douban.com/subject/3269815/" target="_blank">Web Anatomy</a>
+                        </div>
+                    </div>
+                    <div class="bookbody">
+                        <a href="https://book.douban.com/subject/3269815/" target=_blank>
+                            <div class="content">
+                                <div class="span-common">6-9 java遍历之add()方法</div>
+                                <div class="note">正如我之前所写的，Java 8中的新功能特性改变了游戏规则。对Java开发者来说这是一个全新的世界，并且是时候去适应它了。在Java 8的新功能特性中...
+                                    <a  class="btn btn-default lookall">查看全部</a>
+                                </div>
+                                <div class="note-bottom">
+                                    <div class="note-time">2017-03-03 03:03</div>
+                                    <a class="btn btn-default note-del"><span class="glyphicon glyphicon-trash"></span>&nbsp;&nbsp;&nbsp;删除</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="cb"></div>
+            </div>
+        </div>
+        <!--我的关注-->
+        <div id="myAttention">
+            <div class="concern-list">
+                <ul>
+                    <li class="box">
+                        <div class="left-img">
+                            <a href="#" target="_blank">
+                                <img src="images/t1.jpg" class="top_head">
+                            </a>
+                        </div>
+                        <div class="right-c">
+                            <div class="notice-name">
+                                <a href="#" target="_blank">
+                                    <span class="nickname">伯贤</span>
+                                </a>
+                            </div>
+                            <p class="desc" title="全栈工程师">全栈工程师</p>
+                            <div class="fs-line">
+                                <a href="#" class="u-target">
+                                    <span class="group">
+                                        <em>关注</em>
+                                        <em class="num">99</em>
+                                    </span>
+                                </a>
+                                <a href="#" class="u-target num">
+                                    <span class="group fansnum">
+                                        <em>粉丝</em>
+                                        <em class="num">6666666</em>
+                                    </span>
+                                </a>
+                            </div>
+                            <div >
+                                <a href="#" target="_blank" class=" btn btn-default js-concern-msg">私 &nbsp;&nbsp;信</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="box">
+                        <div class="left-img">
+                            <a href="#" target="_blank">
+                                <img src="images/t2.jpg" class="top_head">
+                            </a>
+                        </div>
+                        <div class="right-c">
+                            <div class="notice-name">
+                                <a href="#" target="_blank">
+                                    <span class="nickname">灿烈</span>
+                                </a>
+                            </div>
+                            <p class="desc" title="全栈工程师">全栈工程师</p>
+                            <div class="fs-line">
+                                <a href="#" class="u-target">
+                                    <span class="group">
+                                        <em>关注</em>
+                                        <em class="num">99</em>
+                                    </span>
+                                </a>
+                                <a href="#" class="u-target num">
+                                    <span class="group fansnum">
+                                        <em>粉丝</em>
+                                        <em class="num">6666666</em>
+                                    </span>
+                                </a>
+                            </div>
+                            <div >
+                                <a href="#" target="_blank" class=" btn btn-default js-concern-msg">私 &nbsp;&nbsp;信</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="box">
+                        <div class="left-img">
+                            <a href="#" target="_blank">
+                                <img src="images/t3.jpg" class="top_head">
+                            </a>
+                        </div>
+                        <div class="right-c">
+                            <div class="notice-name">
+                                <a href="#" target="_blank">
+                                    <span class="nickname">璐</span>
+                                </a>
+                            </div>
+                            <p class="desc" title="全栈工程师">全栈工程师</p>
+                            <div class="fs-line">
+                                <a href="#" class="u-target">
+                                    <span class="group">
+                                        <em>关注</em>
+                                        <em class="num">99</em>
+                                    </span>
+                                </a>
+                                <a href="#" class="u-target num">
+                                    <span class="group fansnum">
+                                        <em>粉丝</em>
+                                        <em class="num">6666666</em>
+                                    </span>
+                                </a>
+                            </div>
+                            <div >
+                                <a href="#" target="_blank" class=" btn btn-default js-concern-msg">私 &nbsp;&nbsp;信</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="box">
+                        <div class="left-img">
+                            <a href="#" target="_blank">
+                                <img src="images/t4.jpg" class="top_head">
+                            </a>
+                        </div>
+                        <div class="right-c">
+                            <div class="notice-name">
+                                <a href="#" target="_blank">
+                                    <span class="nickname">伯贤喜欢嫖灿烈</span>
+                                </a>
+                            </div>
+                            <p class="desc" title="全栈工程师">全栈工程师</p>
+                            <div class="fs-line">
+                                <a href="#" class="u-target">
+                                    <span class="group">
+                                        <em>关注</em>
+                                        <em class="num">99</em>
+                                    </span>
+                                </a>
+                                <a href="#" class="u-target num">
+                                    <span class="group fansnum">
+                                        <em>粉丝</em>
+                                        <em class="num">6666666</em>
+                                    </span>
+                                </a>
+                            </div>
+                            <div >
+                                <a href="#" target="_blank" class=" btn btn-default js-concern-msg">私 &nbsp;&nbsp;信</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="box">
+                        <div class="left-img">
+                            <a href="#" target="_blank">
+                                <img src="images/t5.jpg" class="top_head">
+                            </a>
+                        </div>
+                        <div class="right-c">
+                            <div class="notice-name">
+                                <a href="#" target="_blank">
+                                    <span class="nickname">灿烈喜欢我</span>
+                                </a>
+                            </div>
+                            <p class="desc" title="全栈工程师">全栈工程师</p>
+                            <div class="fs-line">
+                                <a href="#" class="u-target">
+                                    <span class="group">
+                                        <em>关注</em>
+                                        <em class="num">99</em>
+                                    </span>
+                                </a>
+                                <a href="#" class="u-target num">
+                                    <span class="group fansnum">
+                                        <em>粉丝</em>
+                                        <em class="num">6666666</em>
+                                    </span>
+                                </a>
+                            </div>
+                            <div >
+                                <a href="#" target="_blank" class=" btn btn-default js-concern-msg">私 &nbsp;&nbsp;信</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="box">
+                        <div class="left-img">
+                            <a href="#" target="_blank">
+                                <img src="images/t6.jpg" class="top_head">
+                            </a>
+                        </div>
+                        <div class="right-c">
+                            <div class="notice-name">
+                                <a href="#" target="_blank">
+                                    <span class="nickname">所以灿烈是我的男孩</span>
+                                </a>
+                            </div>
+                            <p class="desc" title="全栈工程师">全栈工程师</p>
+                            <div class="fs-line">
+                                <a href="#" class="u-target">
+                                    <span class="group">
+                                        <em>关注</em>
+                                        <em class="num">99</em>
+                                    </span>
+                                </a>
+                                <a href="#" class="u-target num">
+                                    <span class="group fansnum">
+                                        <em>粉丝</em>
+                                        <em class="num">6666666</em>
+                                    </span>
+                                </a>
+                            </div>
+                            <div >
+                                <a href="#" target="_blank" class=" btn btn-default js-concern-msg">私 &nbsp;&nbsp;信</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--我的反馈-->
+        <div id="myFeedback">
+            <div class="item newcourse ">
+                <a  href="#" target="_blank" >
+                    <img src="images/img1.jpg" class="bookpic"  >
+                </a>
+                <div class="content">
+                    <div class="feedback_head">
+                        <div class="feedback_name">
+                            <a class="myname"  href="#" target="_blank">灿烈</a>
+                        </div>
+                    </div>
+                    <div class="faceback_body">
+                        <a href="https://book.douban.com/subject/3269815/" target=_blank>
+                            <div class="content">
+                                <div class="book_name">现代软件工程</div>
+                                <div class="note">正如我之前所写的，Java 8中的新功能特性改变了游戏规则。对Java开发者来说这是一个全新的世界，并且是时候去适应它了。在Java 8的新功能特性中...
+                                    <a  class="btn btn-default lookall">查看全部</a>
+                                </div>
+                                <div class="note-bottom">
+                                    <div class="note-time">2017-03-03 03:03</div>
+                                    <a class="btn btn-default note-wait"><span class="glyphicon glyphicon-hourglass"></span>&nbsp;&nbsp;&nbsp;审核中</a>
+                                    <a class="btn btn-default note-del"><span class="glyphicon glyphicon-trash"></span>&nbsp;&nbsp;&nbsp;删除</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="cb"></div>
+            </div>
+            <div class="item newcourse ">
+                <a  href="#" target="_blank" >
+                    <img src="images/img1.jpg" class="bookpic"  >
+                </a>
+                <div class="content">
+                    <div class="feedback_head">
+                        <div class="feedback_name">
+                            <a class="myname"  href="#" target="_blank">灿烈</a>
+                        </div>
+                    </div>
+                    <div class="faceback_body">
+                        <a href="https://book.douban.com/subject/3269815/" target=_blank>
+                            <div class="content">
+                                <div class="book_name">可信软件设计</div>
+                                <div class="note">正如我之前所写的，Java 8中的新功能特性改变了游戏规则。对Java开发者来说这是一个全新的世界，并且是时候去适应它了。在Java 8的新功能特性中...
+                                    <a href="#" class="btn btn-default lookall">查看全部</a>
+                                </div>
+                                <div class="note-bottom">
+                                    <div class="note-time">2017-03-03 03:03</div>
+                                    <a class="btn btn-default note-yes"><span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;&nbsp;审核通过</a>
+                                    <a class="btn btn-default note-del"><span class="glyphicon glyphicon-trash"></span>&nbsp;&nbsp;&nbsp;删除</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="cb"></div>
+            </div>
+            <div class="item newcourse ">
+                <a  href="#" target="_blank" >
+                    <img src="images/img1.jpg" class="bookpic"  >
+                </a>
+                <div class="content">
+                    <div class="feedback_head">
+                        <div class="feedback_name">
+                            <a class="myname"  href="#" target="_blank">灿烈</a>
+                        </div>
+                    </div>
+                    <div class="faceback_body">
+                        <a href="https://book.douban.com/subject/3269815/" target=_blank>
+                            <div class="content">
+                                <div class="book_name">java8函数式编程</div>
+                                <div class="note">正如我之前所写的，Java 8中的新功能特性改变了游戏规则。对Java开发者来说这是一个全新的世界，并且是时候去适应它了。在Java 8的新功能特性中...
+                                    <a  class="btn btn-default lookall">查看全部</a>
+                                </div>
+                                <div class="note-bottom">
+                                    <div class="note-time">2017-03-03 03:03</div>
+                                    <a class="btn btn-default note-no"><span class="glyphicon glyphicon-remove"></span>&nbsp;&nbsp;&nbsp;审核未通过</a>
+                                    <a class="btn btn-default note-del"><span class="glyphicon glyphicon-trash"></span>&nbsp;&nbsp;&nbsp;删除</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="cb"></div>
+            </div>
+            <div class="item newcourse ">
+                <a  href="#" target="_blank" >
+                    <img src="images/img1.jpg" class="bookpic"  >
+                </a>
+                <div class="content">
+                    <div class="feedback_head">
+                        <div class="feedback_name">
+                            <a class="myname"  href="#" target="_blank">灿烈</a>
+                        </div>
+                    </div>
+                    <div class="faceback_body">
+                        <a href="https://book.douban.com/subject/3269815/" target=_blank>
+                            <div class="content">
+                                <div class="book_name">Web Anatomy</div>
+                                <div class="note">正如我之前所写的，Java 8中的新功能特性改变了游戏规则。对Java开发者来说这是一个全新的世界，并且是时候去适应它了。在Java 8的新功能特性中...
+                                    <a  class="btn btn-default lookall">查看全部</a>
+                                </div>
+                                <div class="note-bottom">
+                                    <div class="note-time">2017-03-03 03:03</div>
+                                    <a class="btn btn-default note-yes"><span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;&nbsp;审核通过</a>
+                                    <a class="btn btn-default note-del"><span class="glyphicon glyphicon-trash"></span>&nbsp;&nbsp;&nbsp;删除</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="cb"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--skills-->
+<div id="skills" class="skills">
+    <div class="container">
+        <h3 class="title">能力</h3>
+        <div class="skills-info">
+            <div class="col-md-6 bar-grids">
+                <h6>WEB 设计  <span> 80% </span></h6>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped active" style="width: 80%">
+                    </div>
+                </div>
+                <h6>UI设计 & 开发人员 <span> 70% </span></h6>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped active" style="width: 70%">
+                    </div>
+                </div>
+                <h6>HTML/CSS<span>90% </span></h6>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped active" style="width: 90%">
+                    </div>
+                </div>
+                <h6>PHOTOSHOP <span> 75% </span></h6>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped active" style="width: 75%">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 bar-grids">
+                <h6>项目管理 <span> 85% </span></h6>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped active" style="width: 85%">
+                    </div>
+                </div>
+                <h6>社交媒体 & 市场营销<span> 95% </span></h6>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped active" style="width: 95%">
+                    </div>
+                </div>
+                <h6>JAVA开发者<span>80% </span></h6>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped active" style="width: 80%">
+                    </div>
+                </div>
+                <h6>PHP 设计<span> 60% </span></h6>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped active" style="width: 60%">
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+</div>
+<!--footer-->
+<div class="footer">
+    <div class="container">
+        <div class="col-md-3 grid_4">
+            <h3>关于我们</h3>
+            <p>感谢大家对本馆的使用，如果大家有什么建议可以联系我们的管理员或者直接在首页进行反馈，我们将慎重考虑大家的意见</p>
+            <ul class="social-nav icons_2 clearfix">
+                <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#" class="facebook"> <i class="fa fa-facebook"></i></a></li>
+                <li><a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a></li>
+            </ul>
+        </div>
+        <div class="col-md-3 grid_4">
+            <h3>其他图书馆</h3>
+            <ul class="footer_list">
+                <li><a href="#">-吉首大学图书馆 </a></li>
+                <li><a href="#">- 中山大学图书馆</a></li>
+                <li><a href="#">- 北京大学图书馆</a></li>
+                <li><a href="#">- 清华大学图书馆</a></li>
+                <li><a href="#">- 浙江大学图书馆</a></li>
+            </ul>
+        </div>
+        <div class="col-md-3 grid_4">
+            <h3>联系我们</h3>
+            <address>
+                <span>黄老师</span>
+                <br>
+                <abbr>手机号码 : </abbr> 18797537398
+                <br>
+                <abbr>邮箱 : </abbr> <a href="mailto@example.com">13221312@</a>
+                <br><br>
+                <span>馆长</span>
+                <br>
+                <abbr>手机号码 : </abbr> 18797537398
+                <br>
+                <abbr>邮箱 : </abbr> <a href="mailto@example.com">13221312@</a>
+            </address>
+        </div>
+        <div class="col-md-3 grid_4">
+            <h3>工作时间</h3>
+            <table class="table_working_hours">
+                <tbody>
+                <tr class="opened_1">
+                    <td class="day_label">星期一</td>
+                    <td class="day_value">19:00 am - 22.00 pm</td>
+                </tr>
+                <tr class="opened">
+                    <td class="day_label">星期二</td>
+                    <td class="day_value">19:00 am - 22.00 pm</td>
+                </tr>
+                <tr class="opened">
+                    <td class="day_label">星期三</td>
+                    <td class="day_value">19:00 am - 22.00 pm</td>
+                </tr>
+                <tr class="opened">
+                    <td class="day_label">星期四</td>
+                    <td class="day_value">19:00 am - 22.00 pm</td>
+                </tr>
+                <tr class="opened">
+                    <td class="day_label">星期五</td>
+                    <td class="day_value">19:00 am - 22.00 pm</td>
+                </tr>
+                <tr class="closed">
+                    <td class="day_label">星期日</td>
+                    <td class="day_value">09:00 am - 22.00 pm</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <!--<div class="clearfix"></div>
+        <div class="copy">
+            <p>Copyright &copy; 2015.Company name All rights reserved.<a target="_blank"
+                                                                         href="http://www.cssmoban.com/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a>
+            </p>
+        </div>-->
+    </div>
+</div>
+<!--//footer-->
+<!--smooth-scrolling-of-move-up-->
+<script type="text/javascript">
+    $(document).ready(function() {
+
+        var defaults = {
+            containerID: 'toTop', // fading element id
+            containerHoverID: 'toTopHover', // fading element hover id
+            scrollSpeed: 1200,
+            easingType: 'linear'
+        };
+
+        $().UItoTop({ easingType: 'easeOutQuart' });
+
+    });
+</script>
+<script src="../vendor/jquery/jquery.min.js"></script>
+<script src="../vendor/jquery-easyui/js/jquery.easyui.min.js"></script>
+<script src="../vendor/jquery-easyui/js/easyui-lang-zh_CN.js"></script>
+<script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="../vendor/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<script src="../vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js"></script>
+<script src="../vendor/chartist/js/chartist.min.js"></script>
+<script src="js/uesr.js"></script>
+<script>
+    var current = 'collection';
+    var map = {};
+    map['dynamicall'] = '#west1';
+    map['collection'] = '#west7';
+    map['experience'] = '#west8';
+    map['readingNotes'] = '#west9';
+    map['myAttention'] = '#west10';
+    map['myFeedback'] = '#west11';
+
+    function change_div(id) {
+        document.getElementById(current).style.display = 'none';
+        $(map[current]).removeClass("actived");
+        current = id;
+        document.getElementById(current).style.display = 'block';
+        $(map[current]).addClass("actived");
+        return false;
+    }
+</script>
+</body>
+</html>
